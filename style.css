@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Poppins;
+  background-color: #181818;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+}
+
+.nav-logo {
+  max-width: 130px;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1d4ed8;
+  transition: all 0.3s ease;
+
+}
+
+.link a:hover::after {
+  width: 80%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #1d4ed8;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+
+}
+
+.blur {
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
+}
+
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+header .content h4 {
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 600px;
+  margin-bottom: 1rem;
+}
+
+header .content h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 600px;
+  line-height: 4rem;
+}
+
+header .content span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+header .content img {
+  position: relative;
+}
+
+header .image img {
+  border-radius: 10px;
+}
+
+header .image img {
+  max-width: 600px;
+  margin: auto;
+}
+
+section .header {
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+
+}
+
+section .features {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.features .card {
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.features .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+
+.features .card span {
+  display: inline-block;
+  color: #fff;
+  background-color: #1d4ed8;
+  padding: 2px 9px;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.features .card h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+}
+
+.features .card p {
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.features .card a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3 ease;
+}
+
+.features .card a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.sub-header {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.pricing {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pricing .card {
+  padding: 3rem 2rem;
+  background-color: #27272a;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.pricing .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+  color: #fff;
+}
+
+.pricing .card .content {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.pricing .card h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+.pricing .card h3 {
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.pricing .card p i {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-right: 0.4rem;
+}
+
+.pricing .card button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.pricing .card button:hover {
+  border-color: #1d4ed8;
+  background-color: #1d4ed8;
+}
+
+footer .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+footer .column .logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+footer .column p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+footer .column .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+
+}
+
+
+footer .column .socials a {
+  color: #ccc;
+  font-size: 1.45rem;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover {
+  color: #fff;
+  background-color: #1d4ed8;
+  border-color: #181818;
+}
+
+footer .column h4 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+}
+
+footer .column>a {
+  color: #ccc;
+  display: block;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+footer .column>a:hover {
+  color: #1d4ed8;
+}
+
+.copyright {
+  max-width: 1200px;
+  color: #fff;
+  margin: auto;
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media(width < 900px) {
+  .nav-link {
+    display: none;
+  }
+
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  header .image {
+    grid-area: 1/1/2/2;
+  }
+
+  section .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section .pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    grid-template-columns: 1fr 200px
+  }
+
+
+}
+
+@media (width <600px) {
+
+  section .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section .pricing {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    grid-template-columns: repeat(1fr, 150px);
+  }
+}
